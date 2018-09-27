@@ -6,8 +6,11 @@ competing risks in discrete time, Advances in Data Analysis and Classification, 
 Content: 
 
 CRTreeDisc.R: main function to fit the proposed competing risks discrete survival tree 
+
 DRTreeDisc_fit.R: function internally called by CRTreeDisc() for fitting 
+
 ptree.R: function to plot a tree fitted by CRTreeDisc()
+
 functions.R: auxiliary functions for ptree()
 
 example.R: examplary analysis using the data set UnempDur from R package Ecdat 
