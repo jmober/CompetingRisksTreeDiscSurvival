@@ -23,8 +23,11 @@ UnempDur$spell[UnempDur$spell > 13] <- 13
 UnempDur[apply(UnempDur[,2:5], 1, sum)==0,] <- NA
 UnempDur <- UnempDur[complete.cases(UnempDur),]
 
-# load functions 
-source("CRTreeDisc.R")
+# load all necessary functions 
+source("./CRTreeDisc.R") # requires packages discSurv and sampling
+source("./CRTreeDisc_fit.R")
+source("./functions.R")
+source("./ptree.R") # requires packages grid and gridBase 
 
 # fit tree  
 model <- CRTreeDisc(y~timeInt+ age + ui + reprate + logwage + disrate + tenure, 
