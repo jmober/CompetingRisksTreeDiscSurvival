@@ -17,7 +17,7 @@
 # minimal_ns: sequence of minimal node sizes (tuning parameters)
 
 ### Description: 
-# The function requires the R add-on package discSurv and the self-implemented 
+# The function requires the R add-on package discSurv and sampling, and the self-implemented 
 # function CRTreeDisc_fit.R 
 
 ### Output: 
@@ -33,7 +33,6 @@ CRTreeDisc <- function(formula, data, tuning=c("AIC", "BIC", "ll"),
 
 
   require(discSurv)
-  source("CRTreeDisc_fit.R")
   
   tuning   <- match.arg(tuning)
   distance <- match.arg(distance)
