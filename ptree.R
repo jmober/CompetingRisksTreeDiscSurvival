@@ -44,7 +44,6 @@ ptree     <- function(model,
                       namesE=NULL){
   
   
-    source("functions.R")
     require(grid)
     require(gridBase)
   
